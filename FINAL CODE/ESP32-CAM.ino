@@ -6,13 +6,13 @@
 #include "soc/rtc_cntl_reg.h"
 #include "esp_camera.h"
 
-const char* ssid = "Gandhigirrii";
-const char* password = "Bhavesh@1032";
+const char* ssid = "********";
+const char* password = "********";
 
 const char* ID = "ESP32-CAM"; //Name of our Device, must be unique
 const char* TOPIC = "human/detected"; //Topic to subscribe to
 
-String serverName = "192.168.1.10";   // REPLACE WITH YOUR Raspberry Pi IP ADDRESS
+String serverName = "192.168.__.__";   // REPLACE WITH YOUR Server IP ADDRESS
 //String serverName = "example.com";   // OR REPLACE WITH YOUR DOMAIN NAME
 
 String serverPath = "/upload.php";     // The default serverPath should be upload.php
@@ -23,7 +23,7 @@ int T = 0;
 
 WiFiClient client;
 
-IPAddress broker(192,168,1,10);
+IPAddress broker(192,168,__,__);
 WiFiClient wclient;
 
 PubSubClient Mclient(wclient); //Setup MQTT client
