@@ -18,14 +18,14 @@ camera_fb_t *fb = NULL;
 
 String msg;
 
-const char *ssid = "Gandhigirrii"; //Name of Wifi Network
-const char *pass = "Bhavesh@1032"; //Password of Wifi Network
+const char *ssid = "******"; //Name of Wifi Network
+const char *pass = "*****"; //Password of Wifi Network
 
 const char *ID = "esp32";
-const char *PUB_TOPIC = "env/image";
-const char *SUB_TOPIC = "human/detected";
+const char *PUB_TOPIC = "image";
+const char *SUB_TOPIC = "detected";
 
-const char *broker = "192.168.1.25";
+const char *broker = "192.168.__.__";
 WiFiClient wclient;
 
 PubSubClient client(wclient);
