@@ -4,7 +4,7 @@ import paho.mqtt.client as paho
 import cv2
 import os
 
-broker = "192.168.1.25"
+broker = "192.168.__.__"
 port = 1883
 
 def on_publish(client,userdata,result):
