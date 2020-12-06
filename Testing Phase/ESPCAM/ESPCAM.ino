@@ -15,9 +15,9 @@ float T = 0;
 
 const char *ID = "esp32"; // Name of our device, must be unique
 const char *TOPIC = "camera/image" //Topic to subscribe to 
-//const char *serverIP = "192.168.1.25"; 
+//const char *serverIP = "192.168.__.__"; 
 
-IPAddress broker(192.168.1.25); //IP Address of MQTT Broker/Server - Mosquitto
+IPAddress broker(192.168.__.__); //IP Address of MQTT Broker/Server - Mosquitto
 WiFiClient Wclient;
 
 PubSubClient client(Wclient);
