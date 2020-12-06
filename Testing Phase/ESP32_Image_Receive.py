@@ -6,7 +6,7 @@ import numpy as np
 import binascii
 
 mqttclient = mqtt.Client()
-HOST = "192.168.1.25"
+HOST = "192.168.__.__"
 PORT = 1883
 
 
