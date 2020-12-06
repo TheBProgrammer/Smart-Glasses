@@ -9,9 +9,9 @@ WiFiClient Wclient;
 PubSubClient client(Wclient);
 
 const char *hostA = "esp32";
-const char *ssid = "Gandhigirrii";
-const char *password = "Bhavesh@1032";
-const char *mqtt_server = "192.168.1.25";
+const char *ssid = "******";
+const char *password = "******";
+const char *mqtt_server = "192.168.__.__";
 
 boolean shotflag = false; // No need
 boolean WiFiDisconnect = false;
