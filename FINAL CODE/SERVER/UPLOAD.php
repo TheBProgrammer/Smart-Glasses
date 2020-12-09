@@ -1,7 +1,5 @@
 <?php
 // Rui Santos
-// Complete project details at https://RandomNerdTutorials.com/esp32-cam-post-image-photo-server/
-// Code Based on this example: w3schools.com/php/php_file_upload.asp
 
 $target_dir = "uploads/";
 $datum = mktime(date('H')+0, date('i'), date('s'), date('m'), date('d'), date('y'));
