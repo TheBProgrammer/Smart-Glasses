@@ -1,8 +1,10 @@
 <?php
 // Rui Santos
+// Complete project details at https://RandomNerdTutorials.com/esp32-cam-post-image-photo-server/
+// Code Based on this example: w3schools.com/php/php_file_upload.asp
 
 $target_dir = "uploads/";
-$datum = mktime(date('H')+0, date('i'), date('s'), date('m'), date('d'), date('y'));
+// $datum = mktime(date('H')+0, date('i'), date('s'), date('m'), date('d'), date('y'));
 $target_file = $target_dir . basename($_FILES["imageFile"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -34,11 +36,12 @@ if ($_FILES["imageFile"]["size"] > 500000) {
   $uploadOk = 0;
 }
 
+
 // Allow certain file formats
-if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+/* if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
 && $imageFileType != "gif" ) {
   echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-  $uploadOk = 0;
+ */ $uploadOk = 0;
 }
 
 // Check if $uploadOk is set to 0 by an error
