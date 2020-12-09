@@ -19,6 +19,7 @@ String serverPath = "/upload.php";     // The default serverPath should be uploa
 
 const int serverPort = 80;
 
+
 int T = 0;
 
 WiFiClient client;
