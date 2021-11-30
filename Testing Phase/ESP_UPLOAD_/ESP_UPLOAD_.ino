@@ -33,7 +33,7 @@
     const char* ssid = "***";
     const char* password = "****";
 
-    const char* host = "192.168.3.19";
+    const char* host = "192._._._";
     const int Port = 4567;
     const char* boundry = "dgbfhfh";
 
